@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+body{
+    background-image: url("background.jpg");
+}
+.question{
+    width: 50%;
+    margin-left: 25%;
+    margin-top : 15%;
+    font-size: 30px;
+}
+.question span {
+    margin :  10px 0 20px 10px;
+    background-color: white;
+}
+.q1{
+    clear: left;
+    margin : 10px 0 0 10px;
+    background-color: white;
+}
+.result img{
+    width: 30px;
+    display: none;
+}
+.result{
+    float: right;
+    text-align: right;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ai là triệu phú</title>
+    <link type="text/css" rel="stylesheet" href="../style.css">
+</head>
+<div class = 'question' id="q1">
+<p>Chuột gì có 2 chân?</p>
+<div class="q1" onclick="check(this)" id="true">
+    <span>Chuột mickey</span>
+    <div class="result"><img src='../true.jpeg'></div>
+</div>
+    <div class="q1" onclick="check(this)">
+        <span>Chuột đồng</span>
+        <div class="result"><img src='../false.svg'></div>
+    </div>
+    <div class="q1" onclick="check(this)">
+        <span>Chuột nhà</span>
+        <div class="result"><img src='../false.svg'></div>
+    </div>
+    <div class="q1" onclick="check(this)">
+        <span>Chuột Jerry</span>
+        <div class="result"><img src='../false.svg'></div>
+    </div>
+</div>
+<div class = 'question' id="q2">
+    <p>Chuột gì có 2 chân?</p>
+    <div class="q1" onclick="check(this)" id="true2">
+        <span>Chuột mickey</span>
+        <div class="result"><img src='../true.jpeg'></div>
+    </div>
+    <div class="q1" onclick="check(this)">
+        <span>Chuột đồng</span>
+        <div class="result"><img src='../false.svg'></div>
+    </div>
+    <div class="q1" onclick="check(this)">
+        <span>Chuột nhà</span>
+        <div class="result"><img src='../false.svg'></div>
+    </div>
+    <div class="q1" onclick="check(this)">
+        <span>Chuột Jerry</span>
+        <div class="result"><img src='../false.svg'></div>
+    </div>
+</div>
+</body>
+</html>
+
+<script type="text/javascript">
+    var i = 0;
+    function check(div){
+        if(div.id.match(/true/g)){
+            i = i +1;
+        }
+        div.getElementsByTagName('IMG')[0].style.display = "block";
+        var divs = document.body.querySelectorAll('.q1');
+        for(var i = 0 ; i<divs.length;i++){
+            divs[i].onclick = false;
+        }
+        return i;
+//        setTimeout(function(){
+//            window.location.href = 'q2.html';
+//        },2000)
+    }
+</script>
